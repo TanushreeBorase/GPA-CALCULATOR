@@ -1,2 +1,4 @@
-# GPA-CALCULATOR
-A beginner-level GPA Calculator that will help you calculate the no of credits earned and your points earned. This willtake you back to your college days.
+Shopping - Online???
+This simple online shopping system project has a GUI interface that allows customers to select and purchase items from the catalog. 
+It uses OOPS,c++, HTML, JavaScript, APIs.
+
