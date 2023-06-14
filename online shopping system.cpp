@@ -22,15 +22,14 @@ map<string, double> items =
 	{ "Macbook", 250000 },
 	{ "HP", 40000 },
 	{ "Lenovo", 35000 },
-	{ "DELL", 28000 },
-	{ "Figitzu", 21000 },
-	{ "Acer Swift", 40000 },
-	{ "Asus Genbook", 3500 }
-
+	{ "C", 1000 },
+	{ "C++", 3000 },
+	{ "Java", 4000 },
+	{ "Python", 3500 }
 };
 
-// Stores the selected items with
-// their quantity
+// Stores the selected items with their quantity
+
 map<string, int> selected_items;
 
 // Function to print the bill after shopping
@@ -53,33 +52,39 @@ void printBill(map<string, double> items,
 			<< endl;
 	}
 
-	cout << "-----------------------"
-		<< "-------------\n";
+	cout << "------------------------------------------------------------------------"
+		<< "--------------------------------------------------------------------\n";
 	cout << "Total amount:			 "
 		<< total_amount << endl;
-	cout << "-----------------------"
-		<< "-------------\n";
+	
+	cout << "--------------------------------------------------------------------------"
+		<< "-----------------------------------------------------------------------\n";
+	
 	cout << "*****THANK YOU && HAPPY"
 		<< " ONLINE SHOPPING*****";
 }
 
-// Function to ask the basic details of
-// any customer
+
 void customerDetails()
 {
 
 	cout << "Enter your name: ";
 	string customer_name;
+	
 	getline(cin, customer_name);
 
-	cout << "WELCOME ";
+	cout << "----------- WELCOME -----------------";
+	
 	for (int i = 0;
 		i < customer_name.length();
 		i++) {
+			
 		cout << char(toupper(
 			customer_name[i]));
 	}
+	
 	cout << "\n";
+	
 }
 
 // showMenu() is to print the
@@ -87,23 +92,27 @@ void customerDetails()
 void showMenu()
 {
 	cout << "Menu\n";
-	cout << "= = = = = = = = "
-		<< " = = = = = \n";
+	cout << "= = = = = = = = = = = = = = = = = = = "
+		<< " = = = = = = = = = = = = = = = = = \n";
+	
 	cout << "1.Mobile\n2.laptop\n3"
 		<< ".Computer courses\n";
-	cout << "= = = = = = = = "
-		<< " = = = = = \n";
+	
+	cout << "= = = = = = = = = = = = = = = = = = = = ="
+		<< " = = = = = = = = = = = = = = = = = = =\n";
 }
 
 // Function to display the mobile products
 void showMobileMenu()
 {
-	cout << "- - - - - - - - - - -"
+	cout << "- - - - - - - - - - - - - - - - - - - - - -"
 		<< " - -\nItem	 Cost\n";
+	
 	cout << "1.Samsung Rs.15, 000/-\n";
 	cout << "2.Redmi Rs.12, 000/-\n";
 	cout << "3.Apple Rs.1, 00, 000/-\n";
-	cout << "- - - - - - - - - - - - -\n";
+	
+	cout << "- - - - - - - - - - - - - - - - - - - - - - -\n";
 }
 
 // Function to display Laptop products
