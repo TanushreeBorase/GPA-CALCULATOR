@@ -1,5 +1,5 @@
-// C++ program to implement the program
-// that illustrates Online shopping
+// C++ program that illustrates working of Online shopping
+
 #include <bits/stdc++.h>
 #include <cstring>
 #include <iostream>
@@ -12,8 +12,8 @@ int selectedNum;
 double total_amount = 0;
 int flag = 0;
 
-// Stores items with their corresponding
-// price
+// Stores items with their corresponding price
+
 map<string, double> items = {
 	{ "Samsung", 15000 },
 	{ "Redmi", 12000 },
