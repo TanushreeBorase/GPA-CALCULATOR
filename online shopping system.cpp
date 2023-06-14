@@ -32,9 +32,6 @@ map<string, double> items =
 
 map<string, int> selected_items;
 
-// Function to print the bill after shopping
-// is completed prints the items, quantity,
-// their cost along with the total amount
 void printBill(map<string, double> items,
 			map<string, int> selected_items,
 			float total_amount)
@@ -60,8 +57,8 @@ void printBill(map<string, double> items,
 	cout << "--------------------------------------------------------------------------"
 		<< "-----------------------------------------------------------------------\n";
 	
-	cout << "*****THANK YOU && HAPPY"
-		<< " ONLINE SHOPPING*****";
+	cout << "***** THANK YOU && HAPPY "
+		<< " ONLINE SHOPPING *****";
 }
 
 
@@ -118,16 +115,18 @@ void showMobileMenu()
 // Function to display Laptop products
 void showLaptopMenu()
 {
-	cout << "- - - - - - - - - - -"
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - -"
 		<< " - -\nItem	 Cost\n";
+	
 	cout << "1.Macbook Rs.2, 00, 000/-\n";
 	cout << "2.HP	 Rs.40, 000/-\n";
 	cout << "3.Lenovo Rs.35, 000/-\n";
-	cout << "- - - - - - - - - - - - -\n";
+	
+	cout << "- - - - - - - - - - - - - - - - - - - - - - - -\n";
 }
 
-// if the user selects computer courses,
-// then courses list will be displayed
+// if the user selects computer courses, then the courses list will be displayed
+
 void showComputerCourseMenu()
 {
 	cout << "- - - - - - - - - - "
@@ -151,9 +150,8 @@ void selectedMobile()
 		cout << "Enter respective number: ";
 		cin >> selectedNum;
 
-		if (selectedNum == 1
-			|| selectedNum == 2
-			|| selectedNum == 3) {
+		if (selectedNum == 1 || selectedNum == 2 || selectedNum == 3)
+		{
 
 			// Selected Samsung
 			if (selectedNum == 1) {
@@ -166,14 +164,13 @@ void selectedMobile()
 
 					cout << "You have selected Samsung - "
 						<< quantity << endl;
-					cout << "Are you sure?"
-						<< "(for yes press (Y/y ), "
+					
+					cout << "Are you sure?" << "(for yes press (Y/y ), "
 						<< " if no press other letter): ";
 
 					cin >> confirm_quantity;
 
-				} while ((confirm_quantity != 'y'
-						&& confirm_quantity != 'Y')
+				} while ((confirm_quantity != 'y' && confirm_quantity != 'Y')
 						|| (quantity < 0)
 						|| (ceil(quantity) != floor(quantity)));
 
@@ -195,12 +192,15 @@ void selectedMobile()
 				do {
 					cout << "Quantity: ";
 					cin >> quantity;
+					
 					cout << "You have selec"
 						<< "ted Redmi - "
 						<< quantity << endl;
+					
 					cout << "Are you sure?(f"
 						<< "or yes press (Y/y ), "
 						<< " if no press other letter ): ";
+					
 					cin >> confirm_quantity;
 				} while ((confirm_quantity != 'y'
 						&& confirm_quantity != 'Y')
@@ -231,10 +231,12 @@ void selectedMobile()
 						<< " Apple - "
 						<< quantity
 						<< endl;
+					
 					cout << "Are you sure?"
 						<< "(for yes press (Y/y )"
 						<< ", if no press other letter ): ";
 					cin >> confirm_quantity;
+					
 				} while ((confirm_quantity != 'y'
 						&& confirm_quantity != 'Y')
 						|| (quantity < 0)
@@ -261,13 +263,14 @@ void selectedMobile()
 	}
 }
 
-// If Laptop category is selected
+
 void selectedLaptop()
 {
 	cout << "Do you wish to continue?"
 		<< "(for yes press (Y/y ), "
 		<< "if no press other letter): ";
 	cin >> c1;
+	
 	if (c1 == 'Y' || c1 == 'y') {
 
 		cout << "Enter respective number: ";
@@ -288,6 +291,7 @@ void selectedLaptop()
 					cout << "You have selected"
 						<< " Macbook - "
 						<< quantity << endl;
+					
 					cout << "Are you sure?"
 						<< "(for yes press (Y/y ), "
 						<< " if no press other letter ): ";
@@ -318,6 +322,7 @@ void selectedLaptop()
 					cout << "You have selected"
 						<< " HP - "
 						<< quantity << endl;
+					
 					cout << "Are you sure?"
 						<< "(for yes press (Y/y ), "
 						<< " if no press other letter ): ";
@@ -351,6 +356,7 @@ void selectedLaptop()
 					cout << "You have selected"
 							" Lenovo - "
 						<< quantity << endl;
+					
 					cout << "Are you sure?"
 						<< "(for yes press (Y/y ), "
 						<< "if no press other letter ): ";
