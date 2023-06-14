@@ -1,4 +1,4 @@
-// C++ program that illustrates working of Online shopping
+// C++ program that illustrates the working of Online shopping
 
 #include <bits/stdc++.h>
 #include <cstring>
@@ -8,23 +8,25 @@ using namespace std;
 
 char c1, confirm_quantity;
 float quantity;
-int selectedNum;
+int selected;
 double total_amount = 0;
 int flag = 0;
 
 // Stores items with their corresponding price
 
-map<string, double> items = {
+map<string, double> items =
+{
 	{ "Samsung", 15000 },
 	{ "Redmi", 12000 },
 	{ "Apple", 100000 },
 	{ "Macbook", 250000 },
 	{ "HP", 40000 },
 	{ "Lenovo", 35000 },
-	{ "C", 1000 },
-	{ "C++", 3000 },
-	{ "Java", 4000 },
-	{ "Python", 3500 }
+	{ "DELL", 28000 },
+	{ "Figitzu", 21000 },
+	{ "Acer Swift", 40000 },
+	{ "Asus Genbook", 3500 }
+
 };
 
 // Stores the selected items with
@@ -33,7 +35,7 @@ map<string, int> selected_items;
 
 // Function to print the bill after shopping
 // is completed prints the items, quantity,
-// their cost along with total amount
+// their cost along with the total amount
 void printBill(map<string, double> items,
 			map<string, int> selected_items,
 			float total_amount)
